@@ -575,7 +575,7 @@
         <div class="ball-picker" aria-label="اختيار نوع الكرة">
           <div class="control-head"><span>نوع الكرة</span></div>
           <div class="ball-options" role="group" aria-label="نوع الكرة">
-            <button class="ball-option" type="button" id="blueBallButton" aria-pressed="true"><span class="ball-swatch blue" aria-hidden="true"></span>عادية</button>
+            <button class="ball-option" type="button" id="blueBallButton" aria-pressed="true"><span class="ball-swatch blue" aria-hidden="true"></span>زجاجية</button>
             <button class="ball-option" type="button" id="tennisBallButton" aria-pressed="false"><span class="ball-swatch tennis" aria-hidden="true"></span>تنس</button>
           </div>
         </div>
@@ -1354,7 +1354,7 @@
     els.releaseButton.disabled = false;
     els.pauseButton.disabled = true;
     els.pauseButton.textContent = 'إيقاف مؤقت';
-    const ballLabel = state.ballType === 'tennis' ? 'كرة تنس' : 'كرة عادية';
+    const ballLabel = state.ballType === 'tennis' ? 'كرة تنس' : 'كرة زجاجية';
     els.resultTitle.textContent = `${ballLabel} • إزاحة الكأس Δx = ${format(physics.dx, 3)} m`;
     els.resultCard.classList.add('show');
   }
